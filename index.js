@@ -6,8 +6,9 @@ const getPicture = (id) => {
     loadPicture(id).then(pictureData => {
         displayPicture(pictureData.photo);
 
+
         loadResource(pictureData.links.categorie.href)
-            .then(categoryData => displayCategory(categoryData));
+            .then(categoryData => displayCategory(categoryData.categorie));
 
         loadResource(pictureData.links.comments.href)
             .then(commentsData => displayComments(commentsData));
