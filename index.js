@@ -2,7 +2,7 @@
 import { loadPicture, loadResource } from "./photoloader.js";
 import { displayPicture, displayCategory, displayComments } from "./ui.js";
 
-const getPicture = (id) => {
+export const getPicture = (id) => {
     loadPicture(id).then(pictureData => {
         displayPicture(pictureData.photo);
 
@@ -15,4 +15,4 @@ const getPicture = (id) => {
     });
 };
 
-getPicture(105);
+getPicture(105);  // load the first picture on page load

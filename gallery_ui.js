@@ -1,6 +1,8 @@
+import { getPicture } from './index.js';
+
 export function display_galerie(gallery) {
     let galleryContainer = document.getElementById("gallery_container");
-    galleryContainer.innerHTML = ''; // Nettoyez d'abord le conteneur de la galerie
+    galleryContainer.innerHTML = '';
 
     for(let photo of gallery) {
         let vignette = document.createElement("div");
@@ -12,5 +14,10 @@ export function display_galerie(gallery) {
 
         vignette.appendChild(img);
         galleryContainer.appendChild(vignette);
+
+        // add click event listener to the image
+        img.addEventListener('click', function() {
+            getPicture(photo.photo.id);
+        });
     }
 }
