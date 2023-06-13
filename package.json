@@ -1,0 +1,22 @@
+{
+  "name": "td8-squelette",
+  "version": "1.0.0",
+  "description": "Photobox",
+  "main": "build.js",
+  "scripts": {
+    "build": "esbuild photobox.js --bundle --outfile=build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxime48/td8-ComWeb.git"
+  },
+  "author": "Maxime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxime48/td8-ComWeb/issues"
+  },
+  "homepage": "https://github.com/Maxime48/td8-ComWeb#readme",
+  "dependencies": {
+    "esbuild": "^0.18.2"
+  }
+}

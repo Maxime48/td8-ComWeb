@@ -20,6 +20,7 @@ export const displayCategory = (categoryData) => {
 
 export const displayComments = (commentsData) => {
     const commentsList = document.querySelector("#les_commentaires");
+    commentsList.innerHTML="";
 
     commentsData.comments.forEach((comment) => {
         const li = document.createElement("li");
