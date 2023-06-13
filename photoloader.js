@@ -8,7 +8,7 @@ export const loadPicture = (idPicture) => {
 };
 
 export const loadResource = (uri) => {
-    return fetch("https://webetu.iutnc.univ-lorraine.fr"+uri)
+    return fetch(uri)
         .then(response => response.json())
         .catch(error => console.error("Error:", error));
 };

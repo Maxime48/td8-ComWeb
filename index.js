@@ -7,10 +7,10 @@ const getPicture = (id) => {
         displayPicture(pictureData.photo);
 
 
-        loadResource(pictureData.links.categorie.href)
+        loadResource("https://webetu.iutnc.univ-lorraine.fr"+pictureData.links.categorie.href)
             .then(categoryData => displayCategory(categoryData.categorie));
 
-        loadResource(pictureData.links.comments.href)
+        loadResource("https://webetu.iutnc.univ-lorraine.fr"+pictureData.links.comments.href)
             .then(commentsData => displayComments(commentsData));
     });
 };
