@@ -53,6 +53,12 @@
 /*
     photobox : nav
  */
+h1
+{
+    text-align:center;
+    font-family: Arial;
+}
+
 div, nav, section, p, h1, h2 {
   box-sizing: border-box; }
 
