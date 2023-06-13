@@ -1,4 +1,67 @@
-img {
+img
+{
     max-width: 100%;
     height: auto;
+}
+
+
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+
+h1
+{
+    text-align: center;
+}
+
+
+img
+{
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+
+p
+{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+#les_commentaires li {
+    display: inline-block;
+    width: calc(33.33% - 10px); /* Ajustez la largeur en fonction de vos besoins */
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(183, 183, 183);
+    font-size: 14px;
+}
+
+
+#la_photo h4:not(#les_commentaires h4), #la_photo p
+{
+    margin-left: 8%;
+}
+
+
+@media (max-width: 768px) {
+    #les_commentaires li {
+        width: 100%;
+        margin-right: 0;
+    }
 }

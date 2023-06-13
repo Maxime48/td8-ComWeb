@@ -23,7 +23,7 @@ export const displayComments = (commentsData) => {
 
     commentsData.comments.forEach((comment) => {
         const li = document.createElement("li");
-        li.textContent = `${comment.pseudo} : ${comment.content}`;
+        li.innerHTML = `<b>${comment.pseudo}</b> :<br> ${comment.content}`;
         commentsList.appendChild(li);
     });
 };
